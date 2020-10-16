@@ -1,0 +1,25 @@
+@import 'colors';
+@import 'fonts';
+
+body {
+    @include light;
+    color: $text-color;
+}
+
+.button-o {
+    background-color: transparent;
+    border: 2px solid $primary;
+    color: #507fe1;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 17px 22px;
+    @include bold;
+}
+
+.button {
+    padding: 25px 45px;
+    border: none;
+    background-color: $primary;
+    color: white;
+    @include bold;
+}
