@@ -1,5 +1,6 @@
 @import '../colors';
 @import '../fonts';
+@import '../interface';
 
 .navbar {
     position: fixed;
@@ -47,7 +48,7 @@
     background-color: $primary;
     z-index: 0;
     transition: .2s;
-    transform: translateY(-100%);
+    transform: translateY(-200%);
 }
 
 .menu__active {
@@ -101,4 +102,33 @@
 
 .navbar__email {
     text-decoration: none;
+}
+
+@media (max-width: 991px) {
+    .navbar__mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .logo {
+        display: none;
+    }
+
+    .menu__button {
+        height: 60px;
+    }
+
+
+    .menu {
+        top: 80px;
+    }
+    .menu__nav {
+        flex-direction: column;
+    }
+
+    .menu__link {
+        margin-bottom: 20px;
+    }
 }

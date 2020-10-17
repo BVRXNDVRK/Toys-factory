@@ -12,15 +12,23 @@
     font-size: 40px;
     color: white;
     @include bold;
-    margin-left: 410px;
     background-color: rgba(104, 102, 102, 0.582);
     border: 6px ;
-    border-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
     padding: 20px;
     width: 340px;
     margin-bottom: 100px;
 }
 
-.hero__button {
-    margin-left: 495px;
+@media (max-width: 991px) {
+    .hero {
+        background-size: cover;
+        width: 100%;
+    }
+
+    .hero__title {
+        font-size: 28px;
+        width: 250px;
+    }
 }
