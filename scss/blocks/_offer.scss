@@ -1,0 +1,93 @@
+@import '../fonts';
+
+.offer {
+    padding: 100px 0;
+}
+
+.offer-block {
+    background: #fff url('../img/form/formbg.webp') center right -600px no-repeat;
+    padding: 80px;
+    margin-top: -200px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.1); 
+}
+
+.offer__title {
+    font-size: 25px;
+    text-transform: uppercase;
+    @include bold;
+    margin-bottom: 20px;
+}
+
+.offer__subtitle {
+    display: block;
+    font-size: 21px;
+    margin-bottom: 48px;
+}
+
+.offer__form {
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+}
+
+.form__label {
+    display: block;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.input {
+    height: 80px;
+    width: 100%;
+
+}
+
+.form__group {
+    flex-basis: 33.33%;
+}
+
+.form__button {
+     height: 80px;
+     margin-top: 40px;
+     width: 33.33%;
+}
+
+@media (max-width: 1199px) {
+    .offer__block {
+        background-position: center right -720px;
+    }
+}
+
+@media (max-width: 768px) {
+    .offer__block {
+        background: none;
+        background-color: #fff;
+        padding: 40px;
+    }
+
+    .offer__form {
+        flex-direction: column;
+    }
+
+    .offer__title {
+        font-size: 22px;
+    }
+
+    .offer__subtitle {
+        font-size: 18px;
+    }
+
+    .form__group {
+        flex-basis: 100%;
+        width: 100%;
+      
+    }
+
+    .form__button {
+        width: 100%;
+    }
+
+    .form__input {
+        margin-bottom: 20px;
+    }
+}
