@@ -1,0 +1,58 @@
+@import '../fonts';
+
+.blog__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.blog__title {
+    font-size: 24px;
+    @include bold;
+}
+
+.blog__link-more {
+    color: $primary;
+    font-size: 16px;
+}
+
+.blog-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.blog-list__image {
+    height: 150px;
+    width: 250px;
+    overflow: hidden;
+}
+
+.blog-list__image img {
+    width: 250px;
+    height: 170px;
+}
+
+.blog-list__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px; 
+}
+
+.blog__card {
+    box-shadow: 0 5px 10px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.blog-list__card {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 1199px) {
+    .blog__card {
+        flex-basis: 50%;
+    }
+}
