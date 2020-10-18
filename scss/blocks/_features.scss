@@ -1,0 +1,17 @@
+.feature-block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.feature-block__item {
+ flex-basis: 33%;
+ text-align: center;
+}
+
+@media (max-width: 991px) {
+    .feature-block__item {
+        flex-basis: 100%;
+        margin-bottom: 60px;
+    }
+}
