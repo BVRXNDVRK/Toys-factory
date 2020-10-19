@@ -1,0 +1,31 @@
+@import '../colors';
+
+.contact-block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-block__item {
+    text-align: center;
+}
+
+.contact-block__image {
+    margin-bottom: 25px;
+}
+
+.contact-block__text {
+    font-size: 16px;
+}
+
+.contact-block__link {
+    text-decoration: none;
+    color: $text-color;
+}
+
+@media (max-width: 768px) {
+    .contacts-block__item {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}

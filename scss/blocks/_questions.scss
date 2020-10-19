@@ -1,0 +1,20 @@
+@import '../fonts';
+@import '../colors';
+
+.questions-block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+.questions-block__title {
+    @include bold;
+    font-size: 30px;
+}
+
+.questions-block__link {
+    font-size: 24px;
+    color: $primary;
+}

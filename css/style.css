@@ -786,3 +786,77 @@ body {
 .factory-block__image {
   margin: 20px;
 }
+
+.contact-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact-block__item {
+  text-align: center;
+}
+
+.contact-block__image {
+  margin-bottom: 25px;
+}
+
+.contact-block__text {
+  font-size: 16px;
+}
+
+.contact-block__link {
+  text-decoration: none;
+  color: #262626;
+}
+
+@media (max-width: 768px) {
+  .contacts-block__item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+@font-face {
+  font-family: 'Proxima Nova Semibold';
+  src: url("../fonts/ProximaNova-Semibold.eot");
+  src: url("../fonts/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova-Semibold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Light';
+  src: url("../fonts/ProximaNova-Light.eot");
+  src: url("../fonts/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.questions-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.questions-block__title {
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  font-size: 30px;
+}
+
+.questions-block__link {
+  font-size: 24px;
+  color: #507fe1;
+}
