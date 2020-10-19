@@ -761,3 +761,28 @@ body {
   border: 15px solid #f1f1f1;
   border-top: 15px solid #fff;
 }
+
+.factory-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.factory-block__text {
+  font-size: 14px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.factory-block__image img {
+  width: 350px;
+  height: 250px;
+}
+
+.factory-block__image {
+  margin: 20px;
+}

@@ -28,9 +28,7 @@
 }
 
 .reviews-slider__text:after {
-    content: '';
-
-   
+    content: ''; 
     background-color: #fff;
     position: absolute;
     transform: translateX(-480%);
