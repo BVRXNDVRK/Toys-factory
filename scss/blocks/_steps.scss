@@ -1,0 +1,74 @@
+@import '../fonts';
+
+.steps-block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+}
+
+.step:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    display: block;
+    position: absolute;
+    top: 20%;
+    right: -100%;
+}
+
+.step:last-child:after {
+    display: none;
+}
+
+.step__text {
+    max-width: 160px;
+    text-align: center;
+}
+
+.step-title {
+    font-size: 20px;
+}
+
+.step__image {
+    width: 80px;
+    height: 80px;
+}
+
+@media (max-width: 1199px) {
+    .step:after {
+        width: 80%;
+        right: -75%;
+    }
+     
+        
+}
+
+@media (max-width: 991px) {
+    .step:after {
+        display: none;
+    }
+
+    .step {
+        flex-basis: 50%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .step:after {
+        display: none;
+    }
+
+    .steps-block {
+        flex-direction: column;
+    }
+}
