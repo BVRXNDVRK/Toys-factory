@@ -11,7 +11,7 @@
 }
 
 .contact-block__image {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 
 .contact-block__text {
@@ -24,8 +24,13 @@
 }
 
 @media (max-width: 768px) {
-    .contacts-block__item {
+    .contact-block__item {
         width: 100%;
         margin-bottom: 30px;
     }
+
+    .contact-block {
+        flex-direction: column;
+    }
 }
+

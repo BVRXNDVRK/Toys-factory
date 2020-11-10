@@ -5,16 +5,18 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    max-width: 800px;
+    max-width: 100vh;
     margin: auto;
 }
 
 .questions-block__title {
+    padding-left: 40px;
     @include bold;
     font-size: 30px;
 }
 
 .questions-block__link {
+    padding-left: 25px;
     font-size: 24px;
     color: $primary;
 }

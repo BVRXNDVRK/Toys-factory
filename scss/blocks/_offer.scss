@@ -39,7 +39,7 @@
 .input {
     height: 80px;
     width: 100%;
-
+    padding: 25px 45px;
 }
 
 .form__group {
@@ -85,6 +85,12 @@
 
     .form__button {
         width: 100%;
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .input {
+        padding: 10px 20px;
     }
 
     .form__input {

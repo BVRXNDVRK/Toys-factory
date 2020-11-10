@@ -77,10 +77,13 @@
 .footer-pay__image {
     width: 80px;
     height: 40px;
+    margin: 0 10px;
 }
 
 .footer-pay__info {
+
     display: flex;
+    margin-top: 20px;
 }
 
 @media (max-width:768px) {
@@ -100,5 +103,6 @@
 
     .footer-pay__info {
         justify-content: center;
+        flex-wrap: wrap;
     }
 }

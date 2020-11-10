@@ -6,6 +6,7 @@ body {
     color: $text-color;
 }
 
+
 .section {
     padding: 100px 0;
 }
@@ -31,6 +32,10 @@ body {
     @include bold;
 }
 
+.button-o:hover {
+    cursor: pointer;
+}
+
 .button {
     padding: 25px 45px;
     border: none;
@@ -38,6 +43,12 @@ body {
     color: white;
     @include bold;
 }
+
+.button:hover {
+    cursor: pointer;
+}
+
+
 
 @media (max-width: 576px) {
     .button-o {

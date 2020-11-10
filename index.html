@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css"/>
     <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -46,7 +50,7 @@
             <div class="hero">
                 <div class="container">
                     <h1 class="hero__title">НИЗКИЕ ЦЕНЫ</h1>
-                    <button class="button hero__button">ЗАКАЗАТЬ</button>
+                    <a href="#offer"><button class="button hero__button">ЗАКАЗАТЬ</button></a>
                 </div>
 
             </div>
@@ -55,7 +59,7 @@
     <main>
         <section class="offer bg-secundary">
         <div class="container">
-            <div class="offer__block offer-block">
+            <div class="offer__block offer-block" id="offer">
                 <h2 class="offer__title">Заявка на расчет</h2>
                 <span class="offer__subtitle">и получите скиндку 20%</span>
                 <form action="#" class="form offer__form">
@@ -297,7 +301,7 @@
 
                 <div class="footer__contacts">
                     <a class="footer__phone" href="#">+380950020741</a>  
-                    <a class="footer__email" href="#">Tsyht@meil.ru</a>      
+                    <a class="footer__email" href="#">Tsyht@mail.ru</a>      
                     <div class="footer__social">
                         <a class="telegram" href="#">
                             <img class="social__image" src="img/socials/social-icon-1.png">
@@ -315,6 +319,23 @@
         </div>
     </footer>
 
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick/slick.min.js"></script>
     <script type="text/javascript" src="https://spikmi.com/Widget?Id=4290"></script>
+    <script>
+        $(window).load(function() {
+            $('.menu__button').on('click' , function(){
+                $('.menu').toggleClass('menu__active');
+            });
+
+            $(document).ready(function(){
+                $('.reviews-slider').slick({
+                    dots: true
+                });
+            });
+
+        });
+    </script>
 </body>
 </html>

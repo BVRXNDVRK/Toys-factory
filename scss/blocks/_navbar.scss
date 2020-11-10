@@ -8,6 +8,7 @@
     right: 0;
     width: 100%;
     background-color: white;
+    z-index: 99;
 }
 
 .navbar__wrap {
@@ -30,6 +31,18 @@
     width: 70px;
     border-top: none;
     border-bottom: none;
+}
+
+.menu__button:hover {
+    cursor: pointer;
+}
+
+.menu__button:focus {
+    outline: none;
+}
+
+.menu__button:active {
+    background-color: rgba(255, 255, 0, 0.281);
 }
 
 .menubutton__line {
@@ -112,12 +125,17 @@
 
 @media (max-width: 576px) {
 
+
+    .navbar__wrap {
+        min-height: 80px;
+    }
+
     .logo {
         display: none;
     }
 
     .menu__button {
-        height: 60px;
+        height: 80px;
     }
 
 
