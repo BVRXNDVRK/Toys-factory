@@ -5,4 +5,5 @@
 - Html
 - Css
 - Js
+- Normalize.css
 - Spikmi messenger
