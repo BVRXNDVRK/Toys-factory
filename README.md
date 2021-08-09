@@ -6,4 +6,5 @@
 - Css
 - Js
 - Normalize.css
+- Slick slider
 - Spikmi messenger
